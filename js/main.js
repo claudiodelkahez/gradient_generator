@@ -23,3 +23,14 @@ function generateCode() {
 
     document.getElementsByTagName("BODY")[0].style.backgroundImage = `linear-gradient(${currentDirection}, ${colorOne.value}, ${colorTwo.value})`
 }
+
+// copy to clipboard funcion
+
+function copyText() {
+    outputCode.select();
+    document.execCommand('copy');
+    alert('Gradient Copied!')
+}
+
+generateCode();
+
